@@ -1,7 +1,18 @@
 # storybook-vvd
-storybook + vite + vue + docker
+storybook + vite + docker + our vue component library
 
-## Clone & Install Repository
+## Knowledge
+* [node.js](https://nodejs.org/en)
+* [npm](https://docs.npmjs.com/)
+* [Vue](https://vuejs.org/)
+* [Vite](https://vitejs.dev/)
+* [Docker](https://www.docker.com/)
+* [Docker Compose](https://docs.docker.com/compose/)
+* [GNU make](https://www.gnu.org/software/make/manual/make.html)
+
+## Installing & Running Repository
+
+### Clone & Install Repository
 ```
 git clone https://github.com/difuoan/storybook-vvd
 cd storybook-vvd/
@@ -9,12 +20,12 @@ make init
 make up
 ```
 
-## Run Repository
+### Run Repository
 ```
 make up
 ```
 
-## All `make` Commands
+### All `make` Commands
 ```
 init # Add default .env
 up
