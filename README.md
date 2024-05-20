@@ -14,7 +14,7 @@ make up
 make up
 ```
 
-## All Commands
+## All `make` Commands
 ```
 init # Add default .env
 up
