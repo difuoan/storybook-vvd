@@ -1,5 +1,5 @@
 # storybook-vvd
-storybook + vite + docker + our vue component library
+storybook + vite + vue + docker + visual tests
 
 ## Knowledge
 * [node.js](https://nodejs.org/en)
