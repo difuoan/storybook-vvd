@@ -12,6 +12,9 @@ storybook + vite + docker + our vue component library
 
 ## Installing & Running Repository
 
+### Prerequisites
+* a [Chromatic](https://www.chromatic.com/) account
+
 ### Clone & Install Repository
 ```
 git clone https://github.com/difuoan/storybook-vvd
