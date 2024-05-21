@@ -18,6 +18,11 @@ git clone https://github.com/difuoan/storybook-vvd
 cd storybook-vvd/
 make init
 ```
+Make sure to update the .env file with your credentials
+```
+CHROMATIC_PROJECT_TOKEN=chpt_XXXXXXXXXXXXXXXX
+GIT_EMAIL=lucas.j.venturini@gmail.com
+```
 
 ### Run Repository
 ```
