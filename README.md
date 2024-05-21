@@ -37,6 +37,8 @@ make up
 ### Enable Visual Tests
 <img src="assets/visualTestingPanel.png" alt="Visual Testing panel inside the storybook UI" width="25%" align="right"/>
 Follow the setup process further. The next steps will be described in the "Visual Tests" panel inside the storybook UI (see screenshot &rarr;)
+<br clear="right"/>
+
 
 ### All `make` Commands
 ```
