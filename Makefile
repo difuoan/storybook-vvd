@@ -24,3 +24,6 @@ clear:
 
 ps:
 	docker compose ps
+
+vitest:
+	docker compose run --rm vitest

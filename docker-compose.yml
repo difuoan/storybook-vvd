@@ -27,3 +27,8 @@ services:
       # http
       - "traefik.http.routers.storybook.rule=Host(`${DOMAIN}`)"
       - "traefik.http.routers.storybook.entrypoints=web"
+  vitest:
+    build: .
+    volumes:
+      - .:/app
+    command: npm run vitest
