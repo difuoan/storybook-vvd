@@ -17,7 +17,6 @@ storybook + vite + docker + our vue component library
 git clone https://github.com/difuoan/storybook-vvd
 cd storybook-vvd/
 make init
-make up
 ```
 
 ### Run Repository
