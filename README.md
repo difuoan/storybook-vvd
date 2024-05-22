@@ -14,7 +14,7 @@ storybook + vite + vue + docker + visual tests
 
 ### Prerequisites
 * a [Chromatic](https://www.chromatic.com/) account
-* a clone of this repository on GitHub
+* be a contributor to this repository
 
 ### Clone & Install Repository
 ```
