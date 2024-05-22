@@ -10,6 +10,8 @@ WORKDIR /app
 
 ENV PLAYWRIGHT_BROWSERS_PATH=/usr/playwright
 
+RUN npx playwright install --with-deps
+
 RUN chown -R node:node /app
 RUN chown -R node:node /usr/playwright
 USER node
