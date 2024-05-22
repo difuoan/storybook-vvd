@@ -9,7 +9,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "vitest": "vitest",
-    "test-storybook": "test-storybook --url http://storybook:6006"
+    "test-storybook": "test-storybook --url http://storybook:6006 -- --coverage"
   },
   "dependencies": {
     "vue": "^3.4.21"
@@ -23,6 +23,7 @@
     "@storybook/addon-interactions": "^8.1.1",
     "@storybook/addon-links": "^8.1.1",
     "@storybook/blocks": "^8.1.1",
+    "@storybook/jest": "^0.2.3",
     "@storybook/test": "^8.1.2",
     "@storybook/test-runner": "^0.18.1",
     "@storybook/vue3": "^8.1.1",

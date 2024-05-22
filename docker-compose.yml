@@ -54,5 +54,3 @@ services:
     depends_on:
       - storybook
     entrypoint: ["sh", "-c", "npm run test-storybook"]
-
-

@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
 import { fn } from '@storybook/test';
+import { within } from '@storybook/test';
+import { expect } from '@storybook/test';
 import Button from './Button.vue';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
@@ -32,6 +34,11 @@ export const Primary: Story = {
     label: 'Button',
   },
 };
+Primary.play = async (context) => {
+  let canvas = within(context.canvasElement)
+  let primaryButton = await canvas.getByRole("button")
+  await expect(primaryButton.innerText).toBe(context.args.label)
+}
 
 export const Secondary: Story = {
   args: {
@@ -39,6 +46,11 @@ export const Secondary: Story = {
     label: 'Button',
   },
 };
+Secondary.play = async (context) => {
+  let canvas = within(context.canvasElement)
+  let primaryButton = await canvas.getByRole("button")
+  await expect(primaryButton.innerText).toBe(context.args.label)
+}
 
 export const Large: Story = {
   args: {
