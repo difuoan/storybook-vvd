@@ -8,9 +8,7 @@ services:
   storybook:
     container_name: storybook
     user: ${UID}:${GID}
-    build:
-      context: .
-      dockerfile: ./docker/storybook/Dockerfile
+    build: .
     restart: unless-stopped
     env_file: .env
     volumes:
@@ -27,30 +25,30 @@ services:
       # http
       - "traefik.http.routers.storybook.rule=Host(`${DOMAIN}`)"
       - "traefik.http.routers.storybook.entrypoints=web"
-  vitest:
-    container_name: vitest
-    build:
-      context: .
-      dockerfile: ./docker/vitest/Dockerfile
-    env_file: .env
-    networks:
-      - frontend
-    volumes:
-      - .:/app
-    depends_on:
-      - storybook
-    command: npm run vitest
-  test-runner:
-    container_name: test-runner
-    env_file: .env
-    build:
-      context: .
-      dockerfile: ./docker/test-runner/Dockerfile
-    restart: unless-stopped
-    networks:
-      - frontend
-    volumes:
-      - .:/app
-    depends_on:
-      - storybook
-    entrypoint: ["sh", "-c", "npm run test-storybook"]
+  # vitest:
+  #   container_name: vitest
+  #   build:
+  #     context: .
+  #     dockerfile: ./docker/vitest/Dockerfile
+  #   env_file: .env
+  #   networks:
+  #     - frontend
+  #   volumes:
+  #     - .:/app
+  #   depends_on:
+  #     - storybook
+  #   command: npm run vitest
+  # test-runner:
+  #   container_name: test-runner
+  #   env_file: .env
+  #   build:
+  #     context: .
+  #     dockerfile: ./docker/test-runner/Dockerfile
+  #   restart: unless-stopped
+  #   networks:
+  #     - frontend
+  #   volumes:
+  #     - .:/app
+  #   depends_on:
+  #     - storybook
+  #   entrypoint: ["sh", "-c", "npm run test-storybook"]

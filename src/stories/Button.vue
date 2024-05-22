@@ -11,6 +11,7 @@ const props = withDefaults(defineProps<{
    * The label of the button
    */
   label: string,
+  test: string,
   /**
    * primary or secondary button
    */

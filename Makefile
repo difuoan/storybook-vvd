@@ -24,9 +24,3 @@ clear:
 
 ps:
 	docker compose ps
-
-vitest:
-	docker compose run --rm vitest
-
-login-storybook:
-	docker compose exec storybook sh

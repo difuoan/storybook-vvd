@@ -58,6 +58,11 @@ export const Large: Story = {
     size: 'large',
   },
 };
+Large.play = async (context) => {
+  let canvas = within(context.canvasElement)
+  let primaryButton = await canvas.getByRole("button")
+  await expect(primaryButton.innerText).toBe(context.args.label)
+}
 
 export const Small: Story = {
   args: {
