@@ -1,6 +1,9 @@
 # storybook-vvd
 storybook + vite + vue + docker + visual tests
 
+## !!! OUTDATED !!!
+use [this repository](https://github.com/difuoan/storybook) instead
+
 ## Knowledge
 * [node.js](https://nodejs.org/en)
 * [npm](https://docs.npmjs.com/)
